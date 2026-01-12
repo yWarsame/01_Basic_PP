@@ -14,7 +14,7 @@
 // console.log(hi);
 
 /* Deklaration + Wertzuweisung I */
-
+/*
 let firstName; // Deklaration (Definition)
 console.log(firstName); // Ausgabe
 firstName = "Max"; // Wertzuweisung | assignment
@@ -28,11 +28,21 @@ console.log("Hi, ich bin " + firstName + " " + familyName + "!");  // Ausgabe
     JS ist ein untypisierte Sprache!
 */
 
+let test; // Deklarartion
 
+console.log ("Datentype : "+ typeof test); // Ausgabe Datentype
+console.log("Inhalt: "+ test);
+console.log("---------------------")
 
+test = "hi";
+console.log ("Datentype : "+ typeof test); // Ausgabe Datentype
+console.log("Inhalt: "+ test);
+console.log("---------------------")
 
-
-
+test = 2;
+console.log ("Datentype : "+ typeof test); // Ausgabe Datentype
+console.log("Inhalt: "+ test);
+console.log("---------------------")
 
 /* Variablen vs. Konstanten in JS */
 
