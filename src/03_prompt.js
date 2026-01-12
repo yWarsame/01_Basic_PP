@@ -1,8 +1,12 @@
-// --> installiern mit: npm i prompt-sync
+// --> installiern mit: npm i neuerPrompt-sync
 
-const prompt = require('prompt-sync')({sigint: true});
+const neuerPrompt = require('prompt-sync')({sigint: true});
 
 // Alles muss man selber machen lassen! ...
-let firstName = prompt("Vorname?: ");
-let familyName = prompt("Name?: ");
+let firstName = neuerPrompt("Vorname?: ");
+let familyName = neuerPrompt("Name?: ");
 console.log("Hallo, " + firstName + " " + familyName +"!");
+console.log("Ein Markt belohnt nicht Fleiß, sondern Positionierung!");
+
+// npm i prompt -sync
+// npm init -y
