@@ -17,4 +17,4 @@ const sum = num1 + num2;
 
 console.log("Datentype num1: " + typeof num1);
 console.log("Datentype num2: " + typeof num2);
-console.log(`Die Summe der Zahlen ist: ${sum}`);
+console.log(`Die Summe der Zahlen sind: ${sum}`);
