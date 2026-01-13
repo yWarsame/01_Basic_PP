@@ -12,9 +12,9 @@ isJohnOlder = (ageJohn > ageMark);
 isJohnEqual = (ageJohn == ageMark);
 
 // Ausgabe
-// console.log("ageJohn: " + ageJohn);
-// console.log("ageMark: " + ageMark);
-// console.log("isJohnOlder: " + isJohnOlder);
-// console.log("isJohnEqual: " + isJohnEqual);
-// console.log("------------------");
+console.log("ageJohn: " + ageJohn);
+console.log("ageMark: " + ageMark);
+console.log("isJohnOlder: " + isJohnOlder);
+console.log("isJohnEqual: " + isJohnEqual);
+console.log("------------------");
 
