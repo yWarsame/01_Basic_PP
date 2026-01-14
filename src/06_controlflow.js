@@ -34,7 +34,10 @@ console.log("ageJohn: " + ageJohn);
   /************ IF - ELSE  ************/
 // mit Alternative  
 // entweder ja oder nein
-if (isJohnOlder) {
+// if (true)
+//if(false)
+//if(isJohnOlder)
+if (ageJohn>ageMark) {
                 console.log("John ist älter.");
 } else {    
                 console.log("John ist jünger.");
