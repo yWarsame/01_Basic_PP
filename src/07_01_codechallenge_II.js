@@ -41,7 +41,35 @@ Alter 13-17 // Cola
 
 // Iteration II: case | switch - Struktur
 const prompt = require('prompt-sync')({sigint: true});
-let yourName, yourAge, yourDrink;
+// Abspeichern der Altersbereiche in Variablen
+let yourName, yourAge, yourDrink; 
+// Vorteil: übersichtlich - Nachteil: bläht den code auf! -
+// -> Ternary -> Kapselung über Funktionen
+let ageMilk = (yourAge >= 0 && yourAge <= 5);
+let ageJuice = (yourAge >= 6 && yourAge <= 12);
+let ageCola = (yourAge >= 13 && yourAge <= 17); 
+let ageWine = (yourAge >= 18);
+
+x
 //
 yourName = prompt("Gib deinen Namen ein: ");
 yourAge = parseInt(prompt("Gib dein Alter ein: "));  
+//
+switch (true) 
+{
+    case ageMilk:
+        yourDrink = "Milch";
+        break;
+    case ageJuice:
+        yourDrink = "Saft";
+        break;
+    case ageCola:
+        yourDrink = "Cola";
+        break;
+    case ageWine:
+        yourDrink = "Wein";
+        break;
+    default:
+        yourDrink = "Unbekanntes Getränk";
+        break;
+} 
