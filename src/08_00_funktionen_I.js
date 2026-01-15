@@ -43,12 +43,17 @@ function ausgabeNamen() {
 // 2c. Mehrere Parameter / Argumente
 
 // ausgabeNamen3();
-ausgabeNamen3("Max", "Mützerich");
+// ausgabeNamen3("Max", "Mützerich");
 
 // Argumente werden von prompt() geliefert --> Input
-const prompt = require('prompt-sync')({sigint: true});
-ausgabeNamen3(prompt("Vorname: "),prompt("Name: "));
+// const prompt = require('prompt-sync')({sigint: true});
+// ausgabeNamen3(prompt("Vorname: "),prompt("Name: "));
 
-function ausgabeNamen3(firstName, familyName) {  // Parameter mit Mehrfachbelegung, Argumente: Vorname 
-    console.log("Hallo, " + firstName + " " + familyName + "!");
-}
+// function ausgabeNamen3(firstName, familyName) {  // Parameter mit Mehrfachbelegung, Argumente: Vorname 
+//     console.log("Hallo, " + firstName + " " + familyName + "!");
+// }
+
+/***** Funktionen 03a *****/
+// 03a. Vorbereitung -Trennen der Verantwortlichkeiten
+// Postulat: one fnction = one job (uncle Bob)
+// SRP single responsibility principle
