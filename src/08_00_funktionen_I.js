@@ -71,4 +71,7 @@ function ausgabeNamenSRP(firstName, familyName) {  // Parameter
 
 } 
 
+
+/***** Funktionen 03b *****/
+// 03b Verantwortlichkeiten in getrennte Funktionen auslagern
 //   console.log("Hallo, " + firstName + " " + familyName + "!");
