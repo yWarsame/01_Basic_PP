@@ -3,30 +3,38 @@
 // 1. Kapselung von Codeblöcken
 
 // Funktionsaufruf | call
-// halloKlasse();
-  
-// Funktionsrumpf | (callee)    
-// Funktionsdeklaration
-function halloKlasse()
-{
-    console.log("Hallo Klasse!");
-}
+// test();
 
-// Warum geht das in JVS?
-// executable context: der Compiler geht
-// den gesamten Code durch
-// und legt für jede Funktion einen eigenen Kontext an
-// und speichert die Funktion im Speicher ab!
+// Funktionsrumpf | (callee)
+// Funktionsdeklaration
+function test()
+{
+    console.log("Hallo, Simonas!");
+}
 
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
 
 // call
-ausgabeNamen();
+// ausgabeNamen();
 
 // Funktionalität
 function ausgabeNamen() {
-    // console.log("Hallo Klasse 01 !");
-    // console.log("Hallo Klasse 02 !");
-    // console.log("Hallo Klasse 03 !");
-}   
+    // interne Variable | What happens in VEGAS ...
+    let firstName = "Yasin";
+    console.log("Hallo, " + firstName  + "!");
+}
+
+// console.log(firstName); // Fehler: Scope
+
+/***** Funktionen 02b *****/
+// 2b. Parametrisierung + Datenübergabe von AUSSEN
+
+ausgabeNamen2();
+ausgabeNamen2("Yasin"); // Argument --> Daten für Parameter
+ausgabeNamen2("Tarik");
+ausgabeNamen2("Sandra");
+
+function ausgabeNamen2(firstName) { // Parameter
+    console.log("Hallo, " + firstName  + "!");
+}
