@@ -111,7 +111,7 @@ const operations = {
 };
 
 // 3. Führt die Rechenoperation dynamisch per Key-Lookup asu (ersetz hier den switch /Case)
-const taschenRechner = (op, a, b) => operations[op] ? operations[op](a, b) : "Ungültiger Operator";
+const taschenRechner = (op, a, b) => operations[op] ? operations[op](a, b) : "Ungültiger Operator";   // tenäre Schreibweise
 
 // 4. Steuerung (Eingabe und Ablauf)
 const a = parseFloat(prompt("Wert für a eingeben: "));
