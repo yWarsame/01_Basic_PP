@@ -10,13 +10,13 @@
 Solange die Variable existiert, bleibt dieser erhalten
 hier: Verkettung eines Strings // Transponierung
 */
-
+/*
  let str = ""; // Anfangswert
  for (let i = 0; i < 10; i++) {
     str += "Test" + " "; // a = a + 1
    output(str);
  }
-
+*/
 
 /********* Überlegungen - Transponierung **********/
 
