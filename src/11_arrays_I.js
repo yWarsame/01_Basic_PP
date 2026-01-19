@@ -17,6 +17,24 @@ console.log(arr[5]); // // Letzt Pos. Elementen.
 console.log( arr[arr.length - 1]); // Letzt Pos. Elementen.
 
 */
+/* 02a. Theorie: Schleifen (for-schleife) */
+/* For -Schleifen als allg. Wiederholungs-Struktur */
+
+//Inkrement (untere Grenze --> obere Grenze)
+/*for (let i = 0; i < 100 ; i++) {
+    output("index :" + i);  // i --> Schleifen-Index
+ }
+*/
+ 
+// Dekrement (obere Grenze --> untere Grenze)
+// for (let i = 10; i > 0; i--) {  // i --> Schleifen-Index
+//      output("index :" + i);
+// }
+// Inkrement (var. Schrittweite)
+ for (let i = 10; i <= 100; i += 10) {
+   output("index :" + i);   
+ }
+
 
 
  /*   PRAXIS
@@ -50,6 +68,7 @@ function getSentence(word1,word2,word3,word4,word5,word6) {
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation: semantisches Problem --> numerisches Problem
 //output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+/*
 function getSentenceArr(arr) {
     const GAP = " ";
     const PUNCT = ".";
@@ -64,7 +83,7 @@ function getSentenceArr(arr) {
     return str;
 }
 
-
+*/
 
 // Modul: Ausgabe in Konsole : Test
 //output("hi"); 
@@ -73,3 +92,26 @@ function output(outputStr) {
 }
 
 
+
+/*output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
+
+function getSentenceArr(arr) {
+    const GAP = " ";
+    const PUNCT = ".";
+    let str = "";
+    
+    // Zählergesteuerte for-Schleife
+    for (let i = 0; i < arr.length; i++) {
+        str += arr[i];
+        str += GAP;
+    }
+    
+    // Entferne das letzte Leerzeichen und füge Punkt hinzu
+    str = str.slice(0, -1) + PUNCT;
+    return str;
+}
+
+function output(text) {
+    console.log(text);
+}
+*/
